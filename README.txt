@@ -1,10 +1,3 @@
--Tên bảng ông tạo trong mySQL là: employees_management_system_database
--Khi nhập ông lưu ý:
-+ email với phone tui set là unique nên nếu ông gõ record nào mà trùng 2 cái này thì nó lỗi nhá
-+ Date thì tui gõ trong postman là "yyyy-mm-dd" - gõ là string
-+ Attribute depart của Employee là mặc định bằng 0 (nhân viên đó chưa làm cho phòng nào)
--Tui sẽ không viết service như của fpt nhá, đọc trên mạng nghe bảo nó dùng cruid thay vì jpa..., với lại tui ko biết cái đó
-nên chỉ có controller thôi
 -Về controller thì có các Mapping:
 + "/getDepartments": get tất cả department
 + "/getDepartment/{id}": get department theo id
