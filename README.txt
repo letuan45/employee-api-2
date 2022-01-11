@@ -72,4 +72,4 @@ vượt quá cho phép sẽ throws exception của mySQL (cái exception dài d�
 * Update lần cuối
 - Thêm sevices.
 - Các controller sẽ gọi các service để giao tiếp với DB
-- controller hiện giờ chỉ có nghiệm vụ gọi các Mapping
+- controller hiện giờ chỉ có nhiệm vụ gọi các Mapping
