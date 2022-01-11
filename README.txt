@@ -68,3 +68,8 @@ thì không được xóa và sau đó throw exception.
 lỗi này thường có trong response.data.message
 + Chưa bắt lỗi vi phạm constrain về length của dữ liệu... nếu bỏ trống ô input thì vẫn trả về error, nếu length dài
 vượt quá cho phép sẽ throws exception của mySQL (cái exception dài dài như hôm qua).
+
+* Update lần cuối
+- Thêm sevices.
+- Các controller sẽ gọi các service để giao tiếp với DB
+- controller hiện giờ chỉ có nghiệm vụ gọi các Mapping
