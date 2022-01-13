@@ -1,4 +1,4 @@
-Hướng dẫn cài đặt
+*Hướng dẫn cài đặt
 
 - Trước tiên bạn cần có STS (Spring Tools Suite), một IDE hỗ trợ các công cụ giúp chạy dự án Sring Boot back end này.
 link download: https://spring.io/tools (download bản dùng cho Eclipse)
@@ -13,18 +13,17 @@ Link tải MySQL Workbench: https://dev.mysql.com/downloads/workb...
 
 - Sau khi tải xong, tạo một script mới có nội dung: 
 create database employees_management_system_database để tạo database của đồ án
-- Mở STS lên và chọn workspace (nơi lưu trữ dự án)
-- Chọn File -> Open Projects from File System or Archive -> Directory... (Dẫn đến thư mục Source Code)
-
-
-
-
-
-
-
-
-
-
+- Mở STS lên và chọn workspace (nơi lưu trữ dự án) đảm bảo rằng thư mục đồ án nằm trong thư mục workspace này.
+- Ở Package Explorer Click chuột phải chọn import...
+- Chọn Maven, Dropdown sẽ xuất hiện -> chọn Existing Maven Projects -> Click next -> Browse đến thư mục của project -> Finish -> Đợi cho IDE download các thư viện cần thiết
+- Tìm đến src/main/java/net/java/springboot/SpringbootEmsRestfullApplication.java
+- Trước khi chạy cần đảm bảo rằng: 
++ Đã kết nối đến hệ quản trị cơ sỡ dữ liệu mySQL
++ Đã tạo database
++ IDE download thư viện cho project đã hoàn tất
+- Để chạy project click phải -> Run -> 4 (hoặc 3) Spring Boot App 
+- Quá trình chạy không gặp lỗi trên console tức là code đã chạy thành công và API chạy trên local đã sẵn sàng để sử dụng cho front end.
+API: http://localhost:8070/api/v1/
 
 
 -Về controller thì có các Mapping:
