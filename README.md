@@ -1,3 +1,32 @@
+Hướng dẫn cài đặt
+
+- Trước tiên bạn cần có STS (Spring Tools Suite), một IDE hỗ trợ các công cụ giúp chạy dự án Sring Boot back end này.
+link download: https://spring.io/tools (download bản dùng cho Eclipse)
+
+- Tiếp theo cần hệ quản trị cơ sở dữ liệu mySQL
+Nếu chưa có download tại đây: 
+Link vào trang download: https://dev.mysql.com/
+
+Link tải MySQL server: https://dev.mysql.com/downloads/windo...
+
+Link tải MySQL Workbench: https://dev.mysql.com/downloads/workb...
+
+- Sau khi tải xong, tạo một script mới có nội dung: 
+create database employees_management_system_database để tạo database của đồ án
+- Mở STS lên và chọn workspace (nơi lưu trữ dự án)
+- Chọn File -> Open Projects from File System or Archive -> Directory... (Dẫn đến thư mục Source Code)
+
+
+
+
+
+
+
+
+
+
+
+
 -Về controller thì có các Mapping:
 + "/getDepartments": get tất cả department
 + "/getDepartment/{id}": get department theo id

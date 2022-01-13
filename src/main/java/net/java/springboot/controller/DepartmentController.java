@@ -39,7 +39,7 @@ public class DepartmentController {
 		return ResponseEntity.ok(departmentFound);
 	}
 	
-	//Add department to repository
+	//Add department to repository 
 	@PostMapping("/departments")
 	public Department createDepartment(@RequestBody Department department) {
 		return departmentService.createDepartment(department);
