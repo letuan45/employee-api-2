@@ -17,6 +17,7 @@ create database employees_management_system_database để tạo database của 
 - Ở Package Explorer Click chuột phải chọn import...
 - Chọn Maven, Dropdown sẽ xuất hiện -> chọn Existing Maven Projects -> Click next -> Browse đến thư mục của project -> Finish -> Đợi cho IDE download các thư viện cần thiết
 - Tìm đến src/main/java/net/java/springboot/SpringbootEmsRestfullApplication.java
+
 Trước khi chạy cần đảm bảo rằng: 
 + Đã kết nối đến hệ quản trị cơ sỡ dữ liệu mySQL
 + Đã tạo database có tên là employees_management_system_database
