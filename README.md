@@ -17,9 +17,9 @@ create database employees_management_system_database để tạo database của 
 - Ở Package Explorer Click chuột phải chọn import...
 - Chọn Maven, Dropdown sẽ xuất hiện -> chọn Existing Maven Projects -> Click next -> Browse đến thư mục của project -> Finish -> Đợi cho IDE download các thư viện cần thiết
 - Tìm đến src/main/java/net/java/springboot/SpringbootEmsRestfullApplication.java
-- Trước khi chạy cần đảm bảo rằng: 
+Trước khi chạy cần đảm bảo rằng: 
 + Đã kết nối đến hệ quản trị cơ sỡ dữ liệu mySQL
-+ Đã tạo database
++ Đã tạo database có tên là employees_management_system_database
 + IDE download thư viện cho project đã hoàn tất
 - Để chạy project click phải -> Run -> 4 (hoặc 3) Spring Boot App 
 - Quá trình chạy không gặp lỗi trên console tức là code đã chạy thành công và API chạy trên local đã sẵn sàng để sử dụng cho front end.
@@ -97,7 +97,7 @@ lỗi này thường có trong response.data.message
 + Chưa bắt lỗi vi phạm constrain về length của dữ liệu... nếu bỏ trống ô input thì vẫn trả về error, nếu length dài
 vượt quá cho phép sẽ throws exception của mySQL (cái exception dài dài như hôm qua).
 
-* Update lần cuối
+*Update lần cuối
 - Thêm sevices.
 - Các controller sẽ gọi các service để giao tiếp với DB
 - controller hiện giờ chỉ có nhiệm vụ gọi các Mapping
