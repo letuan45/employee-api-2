@@ -26,7 +26,7 @@ Trước khi chạy cần đảm bảo rằng:
 - Quá trình chạy không gặp lỗi trên console tức là code đã chạy thành công và API chạy trên local đã sẵn sàng để sử dụng cho front end.
 API: http://localhost:8070/api/v1/
 
-
+*Chi tiết về api
 -Về controller thì có các Mapping:
 + "/getDepartments": get tất cả department
 + "/getDepartment/{id}": get department theo id
@@ -39,7 +39,7 @@ API: http://localhost:8070/api/v1/
 + "/getEmployee/{id}": get employee có id này
 + "/addEmployee": thêm employee, đừng nhập thêm giá trị cho trường depart, nó auto = 0
 + "/addEmployeeToDepart/{departId}/{employeeId}": thêm employee vào department, cả 2 đều phải có sẵn, không có thì error
-+ "/removeEmployeeFromDepart/{departId}/{employeeId}": Đuổi nhân viên ra khỏi phòng
++ "/removeEmployeeFromDepart/{departId}/{employeeId}": Loại nhân viên ra khỏi phòng
 + "/updateEmployee/{id}": update thông tin employee
 + "/deleteAllEmployee": xóa tất cả employee
 + "/deleteEmployee/{id}": xóa nhân viên có id này
@@ -50,8 +50,7 @@ API: http://localhost:8070/api/v1/
 + Ở model Employee: mặc định role của employee là "Staff", nên không cần phải có thêm trường role khi tạo mới hoặc update
 + Gender input bắt buộc phải là một trong {"male", "female", "other"}(bắt trong controller)
 + Cập nhật Thêm chức năng thăng chức trưởng phòng:
-   - "/setToManager/{departId}/{employeeId}": Nếu phòng đã có trưởng phòng hoặc nhân viên muốn thăng chức này không nằm trong
-phòng ban này thì throws exception
+   - "/setToManager/{departId}/{employeeId}": Nếu phòng đã có trưởng phòng hoặc nhân viên muốn thăng chức này không nằm trong phòng ban này thì throws exception
    - Sau đó update role thành "Manager" và tăng lương
 + Cập nhật Thêm chức năng giáng chức xuống nhân viên:
    - "/setToStaff/{departId}/{employeeId}": Nếu nhân viên này không phải trưởng phòng thì throw exception
@@ -80,6 +79,7 @@ thì không được xóa và sau đó throw exception.
 
 *CHI TIẾT CẬP NHẬT LẦN 4
 - Thêm thư viện validation trong pom.xml
+
 <dependency>
    <groupId>org.springframework.boot</groupId>
    <artifactId>spring-boot-starter-validation</artifactId>
@@ -96,7 +96,7 @@ thì không được xóa và sau đó throw exception.
 - Xử lí throws exception khi có lỗi constrain trong mySQL, các lỗi thường là vi phạm unique constain trong mySQL
 lỗi này thường có trong response.data.message
 + Chưa bắt lỗi vi phạm constrain về length của dữ liệu... nếu bỏ trống ô input thì vẫn trả về error, nếu length dài
-vượt quá cho phép sẽ throws exception của mySQL (cái exception dài dài như hôm qua).
+vượt quá cho phép sẽ throws exception của mySQL.
 
 *Update lần cuối
 - Thêm sevices.
