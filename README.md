@@ -27,6 +27,7 @@ Trước khi chạy cần đảm bảo rằng:
 API: http://localhost:8070/api/v1/
 
 *Chi tiết về api
+
 -Về controller thì có các Mapping:
 + "/getDepartments": get tất cả department
 + "/getDepartment/{id}": get department theo id
