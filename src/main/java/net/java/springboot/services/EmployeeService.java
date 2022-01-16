@@ -178,8 +178,7 @@ public class EmployeeService {
 	public Employee updateEmployee(Long id, Employee employeeDetails) throws IllegalArgumentException {
 		Employee employeeFound = employeeRepository.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundException("Employee not exist with id: " + id));
-		System.out.println(employeeDetails);	
-		
+			
 		//Unique employee.email
 		if(!employeeFound.getEmail().equals(employeeDetails.getEmail()) && employeeRepository.findByEmail(employeeDetails.getEmail()) != null) {
 			throw new IllegalArgumentException("This employee's email has been registered");
