@@ -21,11 +21,11 @@ public class Employee {
 	protected long id;
 	
 	@Column(name = "first_name", length = 25, nullable = false)
-	@Pattern(regexp = "[a-zA-Z][a-zA-Z]*", message = "FirstName is not valid")
+	@Pattern(regexp = "[a-zA-Z]*", message = "FirstName is not valid")
 	protected String firstName;
 	
 	@Column(name = "last_name", length = 50, nullable = false)
-	@Pattern(regexp = "[a-zA-Z][a-zA-Z ]*", message = "LastName is not valid")
+	@Pattern(regexp = "[a-zA-Z ]*", message = "LastName is not valid")
 	protected String lastName;
 	
 	@Column(name = "gender", nullable = false)
