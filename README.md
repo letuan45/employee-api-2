@@ -7,9 +7,9 @@ link download: https://spring.io/tools (download bản dùng cho Eclipse)
 Nếu chưa có download tại đây: 
 Link vào trang download: https://dev.mysql.com/
 
-Link tải MySQL server: https://dev.mysql.com/downloads/windo...
+Link tải MySQL server: https://dev.mysql.com/downloads/windows/installer/8.0.html
 
-Link tải MySQL Workbench: https://dev.mysql.com/downloads/workb...
+Link tải MySQL Workbench: https://dev.mysql.com/downloads/workbench/
 
 - Sau khi tải xong, tại MySQL Workbench tạo một script mới có nội dung: 
 create database employees_management_system_database để tạo database của đồ án
